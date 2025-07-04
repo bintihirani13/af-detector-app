@@ -1,9 +1,6 @@
 import streamlit as st
-import joblib
-
-# Load your trained model (adjust path as needed)
-with open('model.ipynb', 'rb') as f:
-    model = joblib.load('model.ipynb')
+import tensorflow as tf
+model = tf.keras.models.load_model("af_model.keras")
 
 st.title("NEO Hazard Prediction")
 
