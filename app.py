@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 model = tf.keras.models.load_model("af_model.keras")
 
-st.title("NEO Hazard Prediction")
+st.title("AF Prediction")
 
 # Input fields for 6 features
 est_diameter_min = st.number_input('Estimated Diameter Min', format="%.6f")
